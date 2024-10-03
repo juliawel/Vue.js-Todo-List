@@ -27,7 +27,6 @@ watch(todos, newVal => {
   localStorage.setItem('todos', JSON.stringify(newVal))
 }, { deep: true })
 
-// show the latest created at front
 const todos_asc = computed(() => todos.value.sort((a, b) => {
   return b.createdAt - a.createdAt
 }))
