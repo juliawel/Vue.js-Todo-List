@@ -7,7 +7,23 @@ const name = ref('')
 const input_content = ref('')
 const input_category = ref(null)
 
-const addTodo = () => {}
+const addTodo = () => {
+  if (input_content.value.trim() === '' || input_category.value === null) {
+    return
+  }
+  
+  todos.value.push({
+    content: input_content.value,
+    category: input_category.value,
+    done: false,
+    createdAt: new Date().getTime()
+  })
+  
+}
+
+watch(todos, newVal => {
+  localStorage.setItem('todos', JSON.stringify(newVal))
+}, {deep: true})
 
 // show the latest created at front
 const todos_asc = computed(() => todos.value.sort((a,b) => {
@@ -20,6 +36,7 @@ watch(name, (newVal) => {
 
 onMounted(() => {
 	name.value = localStorage.getItem('name') || ''
+  todos.value = JSON.parse(localStorage.getItem('todos')) || []
 })
 </script>
 
