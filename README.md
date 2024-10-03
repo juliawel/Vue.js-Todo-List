@@ -21,7 +21,8 @@ JavaScript;
 HTML/CSS;
 LocalStorage for data persistence;
 
-What Did I Learn?
+--What Did I Learn?--
+
 Vue.js fundamentals: Gained hands-on experience with Vue.js features like ref, computed, watch, and lifecycle hooks (onMounted);
 State management: Learned how to manage component state and persist data using localStorage;
 Form handling: Worked with form inputs, v-model bindings, and how to submit forms using Vue's event modifiers;
