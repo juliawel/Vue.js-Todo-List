@@ -29,5 +29,5 @@ Form handling: Worked with form inputs, v-model bindings, and how to submit form
 LocalStorage persistence: Implemented persistent data storage using localStorage for tasks and user data;
 UI interactions: Managed interactions like adding, editing, and deleting tasks, and updating the UI dynamically;
 
-Acknowledgments
+Acknowledgments:
 This project was inspired by a tutorial from [https://www.youtube.com/watch?v=qhjxAP1hFuI&ab_channel=TylerPotts], which helped guide the development of this Todo List application.
