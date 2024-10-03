@@ -20,3 +20,6 @@ Vue 3;
 JavaScript;
 HTML/CSS;
 LocalStorage for data persistence;
+
+Acknowledgments
+This project was inspired by a tutorial from [https://www.youtube.com/watch?v=qhjxAP1hFuI&ab_channel=TylerPotts], which helped guide the development of this Todo List application.
