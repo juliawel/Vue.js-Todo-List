@@ -5,6 +5,7 @@ This app allows users to create, categorize, and manage their tasks,
   with data persistence using localStorage.
 
 --Features--
+
 Add tasks: Users can add new tasks with a category selection.
 Edit tasks: Modify task content directly from the list.
 Delete tasks: Remove tasks that are no longer needed.
@@ -14,6 +15,7 @@ LocalStorage persistence: Saves the tasks and user name in the browser,
   so they persist even after the page is refreshed.
 
 --Technologies--
+
 Vue 3
 JavaScript
 HTML/CSS
