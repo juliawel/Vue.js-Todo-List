@@ -34,6 +34,10 @@ watch(name, (newVal) => {
   localStorage.setItem('name', newVal)
 })
 
+const removeTodo = (todo) => {
+	todos.value = todos.value.filter((t) => t !== todo)
+}
+
 onMounted(() => {
   name.value = localStorage.getItem('name') || ''
   todos.value = JSON.parse(localStorage.getItem('todos')) || []
@@ -85,6 +89,12 @@ onMounted(() => {
             <input type="checkbox" v-model="todo.done">
             <span :class="`bubble ${todo.category}`"></span>
           </label>
+          <div>
+            <input type="text" v-model="todo.content">
+          </div>
+          <div class="actions">
+						<button class="delete" @click="removeTodo(todo)">Delete</button>
+					</div>
         </div>
       </div>
     </section>
