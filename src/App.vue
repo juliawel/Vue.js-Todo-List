@@ -19,6 +19,8 @@ const addTodo = () => {
     createdAt: new Date().getTime()
   })
 
+   input.content.value = ''
+   input_category.value = null
 }
 
 watch(todos, newVal => {
