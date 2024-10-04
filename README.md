@@ -4,7 +4,7 @@ A simple Todo List application built with Vue.js.
 This app allows users to create, categorize, and manage their tasks, 
   with data persistence using localStorage.
 
---Features--
+## Features
 
 Add tasks: Users can add new tasks with a category selection;
 Edit tasks: Modify task content directly from the list;
@@ -14,14 +14,14 @@ Category filtering: Tasks can be categorized as 'business' or 'personal';
 LocalStorage persistence: Saves the tasks and user name in the browser,
   so they persist even after the page is refreshed;
 
---Technologies--
+## Technologies
 
 Vue 3;
 JavaScript;
 HTML/CSS;
 LocalStorage for data persistence;
 
---What Did I Learn?--
+## What Did I Learn?
 
 Vue.js fundamentals: Gained hands-on experience with Vue.js features like ref, computed, watch, and lifecycle hooks (onMounted);
 State management: Learned how to manage component state and persist data using localStorage;
